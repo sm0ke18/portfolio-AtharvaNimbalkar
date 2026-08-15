@@ -7,79 +7,75 @@ gsap.registerPlugin(ScrollTrigger);
 const servicesData = [
   {
     id: '01',
-    title: 'AI FULL STACK DEVELOPMENT',
-    description: 'I build scalable, high-performance web applications by combining modern frontend frameworks, robust backend systems, and AI-powered solutions. From planning and architecture to deployment, I create secure, responsive, and production-ready digital experiences.',
+    title: 'AI & COMPUTER VISION',
+    description: 'I design and build vision-driven AI systems for real-world problems, from plant phenotyping pipelines to detection models with optimized inference speed and decision support tooling.',
     capabilities: [
-      'Develop responsive web applications with React.js & Next.js',
-      'Build secure REST APIs using FastAPI & Node.js',
-      'Design scalable backend architecture and databases',
-      'Integrate AI-powered features and automation',
-      'Deliver clean, maintainable, production-ready code'
+      'YOLO-based plant analysis systems',
+      'Real-time CV inference optimization',
+      'OpenCV and image processing workflows',
+      'Model evaluation and deployment pipelines',
+      'Dashboard-driven insights for operational teams'
     ],
     buttonText: 'VIEW PROJECTS'
   },
   {
     id: '02',
-    title: 'FRONTEND DEVELOPMENT',
-    description: 'I create fast, responsive, and visually engaging user interfaces that provide seamless user experiences across desktop, tablet, and mobile devices.',
+    title: 'FULL-STACK DEVELOPMENT',
+    description: 'I build responsive and scalable interfaces and APIs that connect machine learning systems to user workflows in a clean, maintainable product architecture.',
     capabilities: [
-      'React.js',
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'GSAP Animations',
-      'Responsive Design'
+      'React.js frontends',
+      'FastAPI and Node.js backends',
+      'PostgreSQL and MongoDB data layers',
+      'Secure REST APIs',
+      'Interactive analytics dashboards'
     ]
   },
   {
     id: '03',
-    title: 'BACKEND & API DEVELOPMENT',
-    description: 'I develop secure and scalable backend systems with well-structured APIs, efficient databases, and authentication mechanisms to power modern web applications.',
+    title: 'MULTIMODAL ML SYSTEMS',
+    description: 'I work with multimodal pipelines combining OCR, text classification, image understanding, and explainable AI for content moderation and safety-focused decision systems.',
     capabilities: [
-      'FastAPI',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'PostgreSQL',
-      'JWT Authentication'
+      'EasyOCR and regex normalization',
+      'XLM-RoBERTa & CLIP fusion',
+      'Hinglish / code-mixed content handling',
+      'Feature attribution and XAI review',
+      'Cost-efficient caching with Redis'
     ]
   },
   {
     id: '04',
-    title: 'AI & AUTOMATION',
-    description: 'I integrate artificial intelligence into applications to automate workflows, improve productivity, and create intelligent user experiences using modern AI technologies.',
+    title: 'INDUSTRY 4.0 & ANALYTICS',
+    description: 'I explore industrial data systems and operational intelligence, including SCADA-based architecture review and real-time monitoring dashboards for manufacturing environments.',
     capabilities: [
-      'OpenAI Integration',
-      'LangChain',
-      'MCP',
-      'Prompt Engineering',
-      'AI Chatbots',
-      'Workflow Automation'
+      'Ignition SCADA architecture research',
+      'OEE and manufacturing KPI analysis',
+      'Real-time dashboard design principles',
+      'Operational monitoring workflows',
+      'Cross-functional engineering collaboration'
     ]
   },
   {
     id: '05',
-    title: 'MOBILE DEVELOPMENT',
-    description: 'I build responsive cross-platform mobile applications with smooth performance, intuitive interfaces, and seamless integration with backend services.',
+    title: 'MULTI-AGENT AI',
+    description: 'I design modular agentic systems with task decomposition, memory, reviews, and human-in-the-loop escalation for complex workflows and research-oriented automation.',
     capabilities: [
-      'React Native',
-      'API Integration',
-      'Responsive UI',
-      'State Management',
-      'Performance Optimization'
+      'LangGraph orchestration',
+      'Supervisor and specialist agent design',
+      'Memory-aware agent workflows',
+      'Human escalation and reviewer agents',
+      'LLM backend flexibility (OpenAI / Anthropic / Ollama)'
     ]
   },
   {
     id: '06',
-    title: 'DEVOPS & TOOLS',
-    description: 'I streamline development workflows with modern tools for version control, deployment, testing, and collaboration, ensuring reliable and efficient software delivery.',
+    title: 'RESEARCH & PRODUCT THINKING',
+    description: 'I enjoy blending software engineering with research practice, translating ideas into robust systems, dashboards, and user-impacting outcomes.',
     capabilities: [
-      'Git & GitHub',
-      'Docker',
-      'Postman',
-      'CI/CD',
-      'VS Code',
-      'Cloud Deployment'
+      'Rapid prototyping',
+      'Technical documentation',
+      'Experiment design and validation',
+      'AI product ideation',
+      'Learning-driven improvement cycles'
     ]
   }
 ];
@@ -129,7 +125,7 @@ const Services = () => {
         {/* Giant Title */}
         <div className="flex flex-col md:flex-row items-start justify-end gap-2 md:gap-4 lg:gap-8 pr-2 md:pr-0 text-right">
           <h2 ref={titleRef} className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-300 to-gray-800 drop-shadow-2xl leading-[1.1] md:leading-[0.9] text-right">
-            WHAT WE<br/>CAN DO
+            WHAT I<br/>BUILD
           </h2>
         </div>
       </div>

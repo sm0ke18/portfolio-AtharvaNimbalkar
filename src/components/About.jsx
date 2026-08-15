@@ -5,25 +5,32 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const frontendSkills = ["React.js", "Next.js", "React Native", "TypeScript", "JavaScript", "Tailwind CSS", "Bootstrap", "Material UI", "HTML5"];
-const backendSkills = ["Python", "FastAPI", "Node.js", "Express.js", "REST APIs", "Database", "MongoDB", "PostgreSQL"];
-const aiSkills = ["ChatGPT", "Claude", "Cursor AI", "GitHub Copilot", "Google Gemini", "LangChain", "MCP", "Prompt Engineering", "Agentic AI"];
-const toolsSkills = ["Git", "GitHub", "Docker", "Postman", "VS Code", "CI/CD"];
+const frontendSkills = ["React.js", "JavaScript", "Node.js", "FastAPI", "Tailwind CSS", "HTML5", "CSS3"];
+const backendSkills = ["Python", "C++", "PostgreSQL", "MongoDB", "Redis", "REST APIs", "Docker", "GitHub"];
+const aiSkills = ["YOLO", "OpenCV", "PyTorch", "EasyOCR", "XLM-RoBERTa", "CLIP", "Prompt Engineering"];
+const toolsSkills = ["Git", "VS Code", "Postman", "CI/CD", "CesiumJS", "GeoTIFF", "Open-Meteo", "Scikit-learn"];
 
 const aboutWords = [
   { text: "Hey," }, { text: "I'm" },
-  { text: "Leeshark.", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" },
-  { text: "An" }, { text: "enthusiastic" }, { text: "AI" }, { text: "full-stack" }, { text: "developer" }, { text: "who" }, { text: "loves" }, { text: "to" }, { text: "build" }, { text: "state-of-the-art" }, { text: "web" }, { text: "and" }, { text: "mobile" }, { text: "applications." },
-  { text: "I" }, { text: "love" }, { text: "turning" }, { text: "concepts" }, { text: "into" }, { text: "scalable" }, { text: "products" }, { text: "using" }, { text: "tech" }, { text: "stack" }, { text: "like" },
+  { text: "Atharva", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" },
+  { text: "Nimbalkar.", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" },
+  { text: "An" }, { text: "aspiring" }, { text: "software" }, { text: "developer" }, { text: "and" }, { text: "AI/ML" }, { text: "engineer" }, { text: "passionate" }, { text: "about" }, { text: "building" }, { text: "real-world" }, { text: "systems" }, { text: "that" }, { text: "solve" }, { text: "industrial" }, { text: "and" }, { text: "research" }, { text: "problems." },
+  { text: "My" }, { text: "work" }, { text: "spans" }, { text: "computer" }, { text: "vision," }, { text: "deep" }, { text: "learning," }, { text: "and" }, { text: "full-stack" }, { text: "product" }, { text: "development" }, { text: "using" },
+  { text: "Python,", className: "text-white font-medium" },
+  { text: "PyTorch,", className: "text-white font-medium" },
+  { text: "TensorFlow,", className: "text-white font-medium" },
+  { text: "YOLOv8,", className: "text-white font-medium" },
+  { text: "and" }, { text: "CNNs" }, { text: "on" }, { text: "the" }, { text: "ML" }, { text: "side," }, { text: "and" },
   { text: "React,", className: "text-white font-medium" },
-  { text: "FastAPI,", className: "text-white font-medium" },
   { text: "Node.js,", className: "text-white font-medium" },
-  { text: "and" }, { text: "artificial" }, { text: "intelligence" }, { text: "technologies." },
-  { text: "I" }, { text: "always" }, { text: "strive" }, { text: "to" }, { text: "keep" }, { text: "my" }, { text: "code" }, { text: "clean" }, { text: "and" }, { text: "design" }, { text: "great" }, { text: "user" }, { text: "experience" }, { text: "along" }, { text: "with" }, { text: "learning" }, { text: "new" }, { text: "technologies" }, { text: "like" },
-  { text: "LLMs,", className: "text-white font-medium" },
-  { text: "Langchain,", className: "text-white font-medium" },
+  { text: "Express,", className: "text-white font-medium" },
+  { text: "MongoDB,", className: "text-white font-medium" },
+  { text: "PostgreSQL,", className: "text-white font-medium" },
   { text: "and" },
-  { text: "MCP.", className: "text-white font-medium" }
+  { text: "FastAPI", className: "text-white font-medium" },
+  { text: "on" }, { text: "the" }, { text: "backend." },
+  { text: "I've" }, { text: "built" }, { text: "systems" }, { text: "spanning" }, { text: "plant" }, { text: "phenotyping" }, { text: "CV" }, { text: "pipelines," }, { text: "multimodal" }, { text: "content" }, { text: "moderation," }, { text: "and" }, { text: "3D" }, { text: "solar" }, { text: "modeling" }, { text: "platforms." },
+  { text: "I" }, { text: "interned" }, { text: "at" }, { text: "Cummins" }, { text: "India" }, { text: "Ltd.," }, { text: "working" }, { text: "on" }, { text: "Industry" }, { text: "4.0" }, { text: "monitoring" }, { text: "systems" }, { text: "and" }, { text: "SCADA" }, { text: "architecture" }, { text: "—" }, { text: "blending" }, { text: "software" }, { text: "engineering" }, { text: "with" }, { text: "practical," }, { text: "measurable" }, { text: "impact." }
 ];
 
 const About = () => {

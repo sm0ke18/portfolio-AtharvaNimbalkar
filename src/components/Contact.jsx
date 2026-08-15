@@ -71,7 +71,7 @@ const ContactSection = () => {
                         {/* Email */}
                         <div className="hidden md:block">
                             <p className="text-gray-400 text-sm mb-2">Email:</p>
-                            <p className="text-xl tracking-wide">leesharkofficial@gmail.com</p>
+                            <p className="text-xl tracking-wide">atharvanimbalkarsr4@gmail.com</p>
                         </div>
 
                         {/* Phone */}
@@ -80,33 +80,18 @@ const ContactSection = () => {
                             <p className="text-xl tracking-wide">{import.meta.env.VITE_PHONE_NUMBER}</p>
                         </div>
 
-
-
-                        {/* Follow Us */}
+                        {/* Follow Me */}
                         <div className="mt-4 flex flex-col items-center md:items-start">
-                            <p className="text-gray-400 text-sm mb-4">Follow us</p>
+                            <p className="text-gray-400 text-sm mb-4">Follow me</p>
                             <div className="flex items-center justify-center md:justify-start gap-3">
-                                <a href="https://www.instagram.com/lema.web/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.youtube.com/@leeshark" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M2.5 7.1C2.5 7.1 2.3 5.4 3 4.6 3.8 3.8 4.7 3.8 5.1 3.7 8.3 3.5 12 3.5 12 3.5s3.7 0 6.9.2c.4.1 1.3.1 2.1.9.7.8.9 2.5.9 2.5s.2 2 .2 4v1.7c0 2-.2 4-.2 4s-.2 1.7-.9 2.5c-.8.8-1.9.8-2.3.9-3.5.3-7 .2-7 .2s-3.7 0-6.9-.2c-.4-.1-1.5-.1-2.3-.9-.7-.8-.9-2.5-.9-2.5s-.2-2-.2-4V11.1c0-2 .2-4 .2-4z"/>
-                                        <polygon points="9.5,15.5 16,11.5 9.5,7.5"/>
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/in/leeshark-p-1a9642291/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                                <a href="https://www.linkedin.com/in/atharva-nimbalkar-576aa3290/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                                         <rect width="4" height="12" x="2" y="9"/>
                                         <circle cx="4" cy="4" r="2"/>
                                     </svg>
                                 </a>
-                                <a href="https://github.com/leeshark21/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                                <a href="https://github.com/sm0ke18" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                     </svg>

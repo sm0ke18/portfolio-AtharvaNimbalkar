@@ -2,52 +2,65 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const projects = [
   {
-    name: 'INSTAGRAM ai AUTOMATION PLATFORM',
+    name: 'AgroVision AI',
     title: (
       <>
-        INSTAGRAM <span className="font-light italic text-gray-300 lowercase font-serif">ai</span><br />
-        AUTOMATION PLATFORM
+        AGROVISION <span className="font-light italic text-gray-300 lowercase font-serif">ai</span><br />
+        PLANT PHENOTYPING CV PIPELINE
       </>
     ),
-    description: "An AI-powered Instagram chat automation platform that instantly responds to customer messages, qualifies leads, automates conversations, and helps businesses improve engagement while saving time through intelligent workflows.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2000&auto=format&fit=crop"
+    description: 'A real-time computer vision pipeline built with YOLO for automated plant phenotyping, achieving sub-3-second inference latency. Backed by a PostgreSQL storage layer and an interactive web dashboard that cut data retrieval time by 50% over prior manual methods. Built in collaboration with GrowLoc Ltd. as a 4-person team.',
+    image: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2000&auto=format&fit=crop',
+    githubUrl: 'https://github.com/sm0ke18/agrovision-AI'
   },
   {
-    name: 'LiveMeet Translate',
+    name: 'TrustGuard',
     title: (
       <>
-        LIVEMEET <br />
-        TRANSLATE
+        TRUSTGUARD <br />
+        MULTIMODAL AI MODERATION
       </>
     ),
-    description: "A real-time AI-powered Google Meet translation platform that listens to live conversations, converts speech to text, translates it into the user's preferred language, and automatically generates organized meeting notes with AI-powered summaries and key action items.",
-    image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2000&auto=format&fit=crop"
+    description: 'A 4-stage multimodal pipeline (EasyOCR → Regex → XLM-RoBERTa → CLIP fusion) that detects toxic memes and Hinglish hate speech across text and image content, with a multilingual normalization layer for code-switched regional language. Uses cryptographic Redis caching (MD5 image hashing) to cut ML inference costs by ~90% on repeated content, plus an explainable AI (XAI) engine with feature attribution scoring for human-in-the-loop review via a React + MongoDB dashboard.',
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop',
+    githubUrl: 'https://github.com/sm0ke18/Ai-content-Moderation-'
   },
   {
-    name: 'AI Smart Keyboard APP',
+    name: 'SolarSense',
     title: (
       <>
-        AI SMART <br />
-        KEYBOARD APP
+        SOLARSENSE <br />
+        3D SOLAR MODELING
       </>
     ),
-    description: "An AI-powered mobile keyboard application built with Flutter that enhances typing through real-time grammar correction, spelling fixes, intelligent word prediction, and AI-driven sentence rewriting. It delivers fluent, natural English while providing a fast, responsive, and seamless typing experience across mobile applications.A next-generation keyboard application that utilizes artificial intelligence to learn your typing habits and provide context-aware predictions.",
-    image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?q=80&w=2000&auto=format&fit=crop"
+    description: 'A 3D solar modeling platform using spatial raster data and live weather APIs to predict energy output with strong accuracy. Automates ROI and carbon credit calculations across 100+ simulated sites through an interactive analytics dashboard. Built with React, Node.js, CesiumJS, GeoTIFF, and the Open-Meteo API. IEEE Conference paper accepted; patent filed in South Africa.',
+    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop',
+    githubUrl: 'https://github.com/sm0ke18/solarsenseai_deployment',
+    liveUrl: 'https://solarsenseaideoployment.vercel.app/'
   },
   {
-    name: 'Nova AI – Intelligent Desktop Assistant',
+    name: 'Multi-Agent Orchestration System',
     title: (
       <>
-        JARVIS <span className="font-light italic text-gray-300 lowercase font-serif">ai</span><br />
-        DESKTOP ASSISTANT
+        MULTI-AGENT <br />
+        ORCHESTRATION SYSTEM
       </>
     ),
-    description: "An AI-powered desktop assistant that enables hands-free laptop control through natural voice commands. It can open applications, manage files, browse the web, answer questions, automate tasks, and execute system commands using advanced speech recognition and large language models.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+    description: 'An ongoing research-and-build project focused on a supervisor-based multi-agent system that decomposes complex tasks and delegates them to specialist agents (research, analysis, writing, code), with a reviewer agent and human escalation for low-confidence or sensitive actions. Includes short- and long-term memory for cross-task learning, full decision tracing/replay, and a modular LLM backend. Built with PostgreSQL, ChromaDB, Redis, and Docker, and still actively evolving as a core AI systems project.',
+    image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000&auto=format&fit=crop',
+    githubUrl: 'https://github.com/sm0ke18'
   }
 ];
 
 const Project = ({ onCtaClick }) => {
+  const handleGithubClick = (url) => {
+    if (!url) return;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+  const handleOpenLink = (url) => {
+    if (!url) return;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
     <div id="project" className="bg-[#050505] w-full text-white pt-10 md:pt-20 pb-24 px-6 md:px-16">
 
@@ -105,16 +118,30 @@ const Project = ({ onCtaClick }) => {
                 </p>
 
                 <div className="flex items-center gap-4 flex-wrap">
-                  <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors inline-flex items-center gap-2">
-                    Live Demo
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </button>
-                  <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2">
+                  <button
+                    onClick={() => handleOpenLink(proj.githubUrl)}
+                    className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors inline-flex items-center gap-2"
+                  >
                     GitHub
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </button>
+                  {proj.liveUrl && (
+                    <button
+                      onClick={() => handleOpenLink(proj.liveUrl)}
+                      className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2"
+                    >
+                      Live
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7v7m0 0L10 14" />
+                      </svg>
+                    </button>
+                  )}
+                  <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors inline-flex items-center gap-2">
+                    Read More
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                   </button>
                 </div>

@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import centerImage from '../assets/hero_assets/hero_center.png';
 
 const Hero = ({ onPreloadComplete }) => {
-  const [text, setText] = useState('LEESHARK');
+  const [text, setText] = useState('ATHARVA');
   const containerRef = useRef(null);
   const textRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -15,8 +15,8 @@ const Hero = ({ onPreloadComplete }) => {
     window.scrollTo(0, 0);
     document.body.style.overflow = 'hidden';
 
-    const target = "PORTFOLIO";
-    const start = "LEESHARK";
+    const target = "ATHARVA";
+    const start = "ATHARVA";
     let iterations = 0;
     let intervalId;
     let timeoutId;
@@ -122,7 +122,7 @@ const Hero = ({ onPreloadComplete }) => {
           ref={subtitleRef}
           className="absolute -bottom-8 left-1/2 -translate-x-1/2 md:translate-x-0 md:-bottom-12 md:left-8 text-white text-base md:text-2xl lg:text-4xl drop-shadow-md z-10 opacity-0 w-max"
         >
-          <span className="font-bold">Software</span> <span className="font-light italic text-gray-300">Developer</span>
+          <span className="font-bold">Aspiring</span> <span className="font-light italic text-gray-300">Software Developer / AI-ML Engineer</span>
         </p>
 
         <div
