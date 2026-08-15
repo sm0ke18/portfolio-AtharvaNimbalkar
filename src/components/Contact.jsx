@@ -62,7 +62,7 @@ const ContactSection = () => {
             <div className="w-full max-w-7xl mx-auto px-6 md:px-16 py-12 flex flex-col lg:flex-row gap-20 lg:gap-32 relative z-10">
                 
                 {/* Left Side: Contact Info */}
-                <div className="w-full lg:w-5/12 flex flex-col justify-start">
+                <div className="w-full lg:w-2/5 flex flex-col justify-start">
                     <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-300 to-gray-800 drop-shadow-2xl mb-16">
                         Get in touch
                     </h2>
@@ -102,7 +102,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* Right Side: Contact Form */}
-                <div className="w-full lg:w-7/12 flex flex-col lg:pt-4">
+                <div className="w-full lg:w-3/5 flex flex-col lg:pt-4">
                     <form ref={formRef} className="flex flex-col gap-5 w-full" onSubmit={sendEmail}>
                         
                         {/* Name and Email Row */}

@@ -7,6 +7,7 @@ import Project from './components/Project';
 import ContactSection from './components/Contact';
 import Footer from './components/Footer';
 import ComingSoon from './components/ComingSoon';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
@@ -17,7 +18,8 @@ function App() {
   }
 
   return (
-    <main>
+    <main className="page-shell">
+      <AnimatedBackground />
       <Hero onPreloadComplete={() => setPreloaderComplete(true)} />
       
       {preloaderComplete && (

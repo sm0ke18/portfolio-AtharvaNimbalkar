@@ -102,10 +102,16 @@ const Hero = ({ onPreloadComplete }) => {
 
   return (
     <section
-      className="relative min-h-screen flex items-end justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ background: 'radial-gradient(circle, #222222 0%, #000000 80%)' }}
+      id="home"
+      className="relative min-h-screen flex items-end justify-center bg-transparent overflow-hidden"
     >
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(204,255,0,0.05),transparent_20%),radial-gradient(circle_at_70%_30%,rgba(168,85,247,0.04),transparent_22%)] animate-[pulse_8s_ease-in-out_infinite_alternate]" />
+        <div className="absolute -left-1/4 top-1/4 h-72 w-72 rounded-full bg-white/5 blur-3xl animate-[float_16s_ease-in-out_infinite]" />
+        <div className="absolute right-[-10%] top-[15%] h-96 w-96 rounded-full bg-white/5 blur-3xl animate-[float_18s_ease-in-out_infinite_reverse]" />
+        <div className="absolute bottom-[-10%] left-[30%] h-80 w-80 rounded-full bg-white/5 blur-3xl animate-[float_20s_ease-in-out_infinite]" />
+      </div>
 
       <div
         ref={containerRef}

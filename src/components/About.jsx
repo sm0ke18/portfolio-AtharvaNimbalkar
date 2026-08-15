@@ -82,7 +82,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="min-h-screen bg-[#050505] text-white pt-24 pb-0 px-6 md:px-16 flex flex-col justify-between relative overflow-hidden">
+    <section id="about" className="min-h-screen bg-transparent text-white pt-24 pb-0 px-6 md:px-16 flex flex-col justify-between relative overflow-hidden">
 
 
       <div className="max-w-7xl mx-auto w-full z-10">
@@ -130,7 +130,7 @@ const About = () => {
       </div>
 
       {/* Scrolling Skills Marquee */}
-      <div className="flex flex-col border-t border-white/5 bg-[#030303] py-4 mt-auto -mx-6 md:-mx-16">
+      <div className="flex flex-col border-t border-b border-white/5 bg-black/40 backdrop-blur-sm py-4 mt-auto -mx-6 md:-mx-16">
         {/* First Row */}
         <div className="flex overflow-hidden whitespace-nowrap mb-2">
           <div className="flex animate-marquee w-max">

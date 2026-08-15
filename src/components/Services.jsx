@@ -118,7 +118,7 @@ const Services = () => {
 
 
   return (
-    <section id="service" className="md:min-h-screen bg-[#050505] text-white pt-12 pb-12 md:pb-24 px-6 md:px-16 flex flex-col relative overflow-hidden">
+    <section id="service" className="md:min-h-screen bg-transparent text-white pt-12 pb-12 md:pb-24 px-6 md:px-16 flex flex-col relative overflow-hidden">
       
       {/* Top Header Section */}
       <div className="flex flex-col md:flex-row items-end md:items-start justify-end w-full mt-0 z-0 pb-12">
@@ -141,7 +141,7 @@ const Services = () => {
             ref={(el) => itemRefs.current[index] = el}
             data-index={index}
             className={`border-b border-white/20 py-5 md:py-7 px-6 md:px-16 cursor-pointer transition-all duration-300 ease-in-out ${
-              isHighlighted ? 'bg-[#ccff00]' : ''
+              isHighlighted ? 'bg-[linear-gradient(to_bottom,#F6F8FC_0%,#D1DBEB_35%,#A5B2C2_60%,#738297_80%,#5C6776_100%)]' : ''
             }`}
             onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -153,16 +153,16 @@ const Services = () => {
               <div className="flex items-start justify-between w-full lg:w-1/2 gap-2">
                 <div className="flex items-start gap-3 md:gap-16 w-full min-w-0">
                   <div className="h-7 flex items-center md:h-10 flex-shrink-0">
-                    <span className={`text-lg md:text-3xl font-medium transition-colors duration-300 ease-in-out leading-none ${
-                      isHighlighted ? 'text-black' : 'text-white'
+                    <span className={`text-lg md:text-3xl font-black transition-colors duration-300 ease-in-out leading-none ${
+                      isHighlighted ? 'text-[#1F2A37]' : 'text-white'
                     }`}>
                       {service.id}
                     </span>
                   </div>
                   <div className="flex flex-col w-full min-w-0">
                     <div className="h-7 flex items-center md:h-10">
-                      <h3 className={`text-[11px] sm:text-sm md:text-xl lg:text-2xl font-black uppercase tracking-wide leading-none transition-colors duration-300 ease-in-out whitespace-nowrap overflow-hidden text-ellipsis ${
-                        isHighlighted ? 'text-black' : 'text-white'
+                      <h3 className={`text-[11px] sm:text-sm md:text-xl lg:text-2xl font-black uppercase tracking-[0.08em] leading-none transition-colors duration-300 ease-in-out whitespace-nowrap overflow-hidden text-ellipsis ${
+                        isHighlighted ? 'text-[#1A2230] drop-shadow-[0_2px_0_rgba(0,0,0,0.7)]' : 'text-white'
                       }`}>
                         {service.title}
                       </h3>
@@ -175,13 +175,13 @@ const Services = () => {
                       }`}
                     >
                       <div className="pt-6 lg:pt-8 flex flex-col gap-3">
-                        <ul className={`transition-colors duration-300 ease-in-out text-sm md:text-base font-light space-y-2 flex flex-col ${
-                          isHighlighted ? 'text-black/80' : 'text-gray-300'
+                        <ul className={`transition-colors duration-300 ease-in-out text-sm md:text-base font-bold space-y-2 flex flex-col ${
+                          isHighlighted ? 'text-[#1F2A37]/90' : 'text-gray-300'
                         }`}>
                           {service.capabilities.map((cap, i) => (
                             <li key={i} className="flex items-start gap-3">
                               <span className={`transition-colors duration-300 ease-in-out mt-1.5 opacity-70 text-[10px] ${
-                                isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                                isHighlighted ? 'text-[#1F2A37]' : 'text-[#CCFF00]'
                               }`}>■</span>
                               <span>{cap}</span>
                             </li>
@@ -197,7 +197,7 @@ const Services = () => {
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className={`w-6 h-6 transition-all duration-300 ${
-                      isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                      isHighlighted ? 'text-[#1F2A37]' : 'text-[#CCFF00]'
                     } ${activeIndex === index ? '-rotate-45' : 'rotate-45'}`} 
                     fill="none" 
                     viewBox="0 0 24 24" 
@@ -219,14 +219,14 @@ const Services = () => {
                   }`}
                 >
                    <div className="pt-4 md:pt-6 lg:pt-[72px] flex flex-col gap-6 w-full pr-0 lg:pr-12">
-                     <p className={`transition-colors duration-300 ease-in-out text-base md:text-lg leading-relaxed max-w-lg font-light ${
-                       isHighlighted ? 'text-black/80' : 'text-gray-300'
+                     <p className={`transition-colors duration-300 ease-in-out text-base md:text-lg leading-relaxed max-w-lg font-bold ${
+                       isHighlighted ? 'text-[#1F2A37]/95' : 'text-gray-300'
                      }`}>
                        {service.description}
                      </p>
                      {service.buttonText && (
                        <button className={`font-bold uppercase tracking-wider text-xs md:text-sm px-6 py-3 border transition-colors duration-300 ease-in-out flex items-center gap-2 mt-4 ${
-                         isHighlighted ? 'bg-black text-[#ccff00] border-black' : 'bg-[#ccff00] text-black border-[#ccff00]'
+                         isHighlighted ? 'bg-[#1A2230] text-[#F6F8FC] border-[#F6F8FC]/40 shadow-[0_3px_0_rgba(0,0,0,0.9)]' : 'bg-white text-black border-white/15'
                        }`}>
                          <span className="w-2 h-2 border-t border-l border-current"></span>
                          {service.buttonText}
@@ -241,7 +241,7 @@ const Services = () => {
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className={`w-10 h-10 transition-all duration-300 ${
-                      isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                      isHighlighted ? 'text-[#1F2A37]' : 'text-[#CCFF00]'
                     } ${activeIndex === index ? '-rotate-45' : 'rotate-45'}`} 
                     fill="none" 
                     viewBox="0 0 24 24" 
