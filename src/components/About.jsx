@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import aboutImage from '../assets/about_section/about_section.png';
+import aboutImage from '../assets/about_section/temp5.jpeg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -97,11 +97,13 @@ const About = () => {
 
           {/* Left Column - Image */}
           <div className="flex justify-center lg:justify-start pl-0 lg:pl-20">
-            <img
-              src={aboutImage}
-              alt="About"
-              className="w-48 md:w-56 lg:w-64 object-contain drop-shadow-2xl"
-            />
+            <div className="w-56 md:w-80 lg:w-96 rounded-2xl overflow-hidden p-4 bg-gradient-to-br from-black/60 via-purple-900/20 to-black shadow-2xl">
+              <img
+                src={aboutImage}
+                alt="About"
+                className="w-full h-full object-cover block"
+              />
+            </div>
           </div>
 
           {/* Right Column - Text Content */}
