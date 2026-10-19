@@ -43,7 +43,7 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
-  const navLinks = ['Home', 'About', 'Service', 'Project', 'Contact'];
+  const navLinks = ['Home', 'About', 'Service', 'Project', 'Certificates', 'Contact'];
 
   return (
     <>

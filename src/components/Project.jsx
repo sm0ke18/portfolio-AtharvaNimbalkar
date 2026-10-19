@@ -48,7 +48,7 @@ const projects = [
     ),
     description: 'An ongoing research-and-build project focused on a supervisor-based multi-agent system that decomposes complex tasks and delegates them to specialist agents (research, analysis, writing, code), with a reviewer agent and human escalation for low-confidence or sensitive actions. Includes short- and long-term memory for cross-task learning, full decision tracing/replay, and a modular LLM backend. Built with PostgreSQL, ChromaDB, Redis, and Docker, and still actively evolving as a core AI systems project.',
     image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000&auto=format&fit=crop',
-    githubUrl: 'https://github.com/sm0ke18'
+    githubUrl: 'https://github.com/PrathameshPaigude/LLM-Cost-Autopilot-Agent-Orchestrator'
   }
 ];
 
